@@ -2,15 +2,22 @@
 
 [中文](README.zh-CN.md) | English
 
+[![test](https://github.com/jcanha11/grill-loop-skill/actions/workflows/test.yml/badge.svg)](https://github.com/jcanha11/grill-loop-skill/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-orange.svg)](https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/)
+
 Grill Loop is a Codex skill for stress-testing and improving product, strategy, and experiment plans through an auditable review loop.
 
 It extends the idea behind `grill-me`: keep asking the hard questions, but avoid forcing a human to sit in the loop for every small decision.
+
+[![Grill Loop preview](assets/grill-loop-preview.svg)](https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/)
 
 ## Interactive explainer
 
 Use the visual page as the public landing/demo page:
 
 - GitHub Pages: <https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/>
+- Promotion kit: [docs/PROMOTION.md](docs/PROMOTION.md)
 - Local preview:
 
 ```bash
@@ -195,6 +202,14 @@ Useful evaluation metrics:
 - Time to decision: elapsed time from initial plan to final artifact.
 
 The first success criterion is simple: compared with `grill-me`, the user should spend less active attention while still receiving a sharper, better-scored plan.
+
+## Sharing
+
+If you want to share the project, use the visual explainer first:
+
+<https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/>
+
+Launch copy, channel notes, and measurement guidance live in [docs/PROMOTION.md](docs/PROMOTION.md).
 
 ## Status
 

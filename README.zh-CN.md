@@ -2,15 +2,22 @@
 
 中文 | [English](README.md)
 
+[![test](https://github.com/jcanha11/grill-loop-skill/actions/workflows/test.yml/badge.svg)](https://github.com/jcanha11/grill-loop-skill/actions/workflows/test.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-orange.svg)](https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/)
+
 Grill Loop 是一个 Codex skill，用来对产品方案、策略方案、实验方案做可审计的循环式拷问与迭代。
 
 它继承 `grill-me` 的价值：持续追问关键问题；但它要解决 `grill-me` 的运行瓶颈：人不应该为每一个小问题持续在线接球。
+
+[![Grill Loop 预览图](assets/grill-loop-preview.svg)](https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/)
 
 ## 可视化说明页
 
 可视化页应作为这个项目的公开落地页和演示页，而不是放在仓库里吃灰：
 
 - GitHub Pages：<https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/>
+- 传播素材：[docs/PROMOTION.md](docs/PROMOTION.md)
 - 本地预览：
 
 ```bash
@@ -195,6 +202,14 @@ OK
 - 决策耗时：从输入方案到最终产物需要多久。
 
 最小成功标准：相比 `grill-me`，用户花更少的主动注意力，同时拿到更清晰、评分更高、可复盘的方案。
+
+## 传播
+
+如果要分享这个项目，优先分享可视化说明页：
+
+<https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/>
+
+发布帖、渠道建议和 14 天复盘指标放在 [docs/PROMOTION.md](docs/PROMOTION.md)。
 
 ## 状态
 

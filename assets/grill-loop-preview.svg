@@ -1,0 +1,50 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Grill Loop preview</title>
+  <desc id="desc">A visual summary of Grill Loop: deep AI questions become an auditable self-running review loop where humans only handle exceptions.</desc>
+  <rect width="1200" height="630" fill="#F3F1EB"/>
+  <circle cx="1040" cy="64" r="260" fill="#3C67F2" fill-opacity="0.14"/>
+  <circle cx="64" cy="140" r="240" fill="#F05A24" fill-opacity="0.12"/>
+  <rect x="56" y="52" width="1088" height="526" rx="36" fill="white" fill-opacity="0.68" stroke="#111317" stroke-opacity="0.12"/>
+  <text x="92" y="111" fill="#F05A24" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="800" letter-spacing="3">GRILL LOOP</text>
+  <text x="92" y="184" fill="#111317" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="66" font-weight="900" letter-spacing="-4">Self-running critique loops</text>
+  <text x="92" y="248" fill="#111317" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="66" font-weight="900" letter-spacing="-4">for sharper plans.</text>
+  <text x="96" y="303" fill="#555E6A" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="500">Deep AI questioning without keeping a human in every loop.</text>
+
+  <g transform="translate(86 366)">
+    <rect width="220" height="112" rx="22" fill="#111317"/>
+    <text x="28" y="42" fill="#FFB491" font-family="SFMono-Regular, Menlo, monospace" font-size="17" font-weight="800">GRILL ME</text>
+    <text x="28" y="75" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="800">Ask deeply</text>
+    <text x="28" y="99" fill="#AAB2BE" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">every answer waits</text>
+  </g>
+
+  <path d="M334 422H415" stroke="#F05A24" stroke-width="6" stroke-linecap="round"/>
+  <path d="M397 402L421 422L397 442" stroke="#F05A24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(446 318)">
+    <circle cx="138" cy="104" r="103" fill="#111317"/>
+    <circle cx="138" cy="104" r="132" stroke="#111317" stroke-opacity="0.16" stroke-dasharray="9 10"/>
+    <text x="66" y="95" fill="#9BA5B2" font-family="SFMono-Regular, Menlo, monospace" font-size="14" font-weight="800" letter-spacing="2">DETERMINISTIC</text>
+    <text x="54" y="127" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="32" font-weight="900">Controller</text>
+    <rect x="-20" y="-20" width="132" height="68" rx="18" fill="#F05A24"/>
+    <text x="11" y="22" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="900">Grill</text>
+    <rect x="180" y="-13" width="150" height="68" rx="18" fill="#3C67F2"/>
+    <text x="205" y="29" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="900">Research</text>
+    <rect x="197" y="161" width="132" height="68" rx="18" fill="#1F8A64"/>
+    <text x="227" y="203" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="900">Judge</text>
+    <rect x="-27" y="164" width="126" height="68" rx="18" fill="#F4B43A"/>
+    <text x="5" y="206" fill="#111317" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="900">State</text>
+  </g>
+
+  <path d="M810 422H891" stroke="#F05A24" stroke-width="6" stroke-linecap="round"/>
+  <path d="M873 402L897 422L873 442" stroke="#F05A24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(926 362)">
+    <rect width="190" height="120" rx="22" fill="#F05A24"/>
+    <text x="28" y="45" fill="white" font-family="SFMono-Regular, Menlo, monospace" font-size="16" font-weight="800">HUMAN</text>
+    <text x="28" y="78" fill="white" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="900">Exceptions</text>
+    <text x="28" y="102" fill="#FFE1D4" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">only when needed</text>
+  </g>
+
+  <rect x="93" y="515" width="1004" height="1" fill="#111317" fill-opacity="0.13"/>
+  <text x="93" y="550" fill="#626973" font-family="SFMono-Regular, Menlo, monospace" font-size="18">FAST_PASS · RESEARCH · JUDGE · ESCALATE · decisions.md · state.json</text>
+</svg>
