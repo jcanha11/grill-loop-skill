@@ -1,8 +1,32 @@
 # Grill Loop
 
+[中文](README.zh-CN.md) | English
+
 Grill Loop is a Codex skill for stress-testing and improving product, strategy, and experiment plans through an auditable review loop.
 
 It extends the idea behind `grill-me`: keep asking the hard questions, but avoid forcing a human to sit in the loop for every small decision.
+
+## Interactive explainer
+
+Use the visual page as the public landing/demo page:
+
+- GitHub Pages: <https://jcanha11.github.io/grill-loop-skill/grill-loop-visual/>
+- Local preview:
+
+```bash
+python3 -m http.server 8765
+open http://127.0.0.1:8765/grill-loop-visual/
+```
+
+The visual page is intentionally not just decoration. It explains the core adoption story:
+
+```text
+Grill Me asks deeply
+→ every question waits for a human
+→ human attention becomes the bottleneck
+→ Grill Loop routes simple/researchable/judgment/escalation cases
+→ the human only handles exceptions
+```
 
 ## Why not just use Grill Me?
 
@@ -35,9 +59,72 @@ The skill preserves:
 - a human-readable decision log in `decisions.md`;
 - explicit terminal status and unresolved escalations.
 
-## Modes
+## Install
 
-Grill Loop has one engine with two execution policies.
+### One-line install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jcanha11/grill-loop-skill/main/install.sh | bash
+```
+
+By default, this installs to:
+
+```text
+$HOME/.agents/skills/grill-loop
+```
+
+To install into another skill directory:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jcanha11/grill-loop-skill/main/install.sh | \
+  GRILL_LOOP_SKILLS_DIR="$HOME/.codex/skills" bash
+```
+
+### Manual install
+
+```bash
+git clone https://github.com/jcanha11/grill-loop-skill.git
+mkdir -p "$HOME/.agents/skills"
+cp -R grill-loop-skill/grill-loop "$HOME/.agents/skills/grill-loop"
+```
+
+Restart Codex or start a new session if the skill does not appear immediately.
+
+### Ask Codex to install it
+
+Paste this into Codex:
+
+```text
+Use $skill-installer to install the skill folder from
+https://github.com/jcanha11/grill-loop-skill/tree/main/grill-loop
+into my user skills directory. Then verify it by running:
+python3 -m unittest grill-loop/scripts/test_grill_state.py
+```
+
+If your Codex environment does not support repository skill installation through `$skill-installer`, paste this instead:
+
+```text
+Clone https://github.com/jcanha11/grill-loop-skill, copy the grill-loop folder
+to $HOME/.agents/skills/grill-loop, and run its unit tests.
+Do not publish or modify any of my other files.
+```
+
+### Ask another agent to install it
+
+For any agent that supports the open Agent Skills format:
+
+```text
+Install the Agent Skill at:
+https://github.com/jcanha11/grill-loop-skill/tree/main/grill-loop
+
+Preserve the SKILL.md file, references/, scripts/, tests/, and agents/openai.yaml.
+Install it as a user-level skill named grill-loop.
+After installation, run the Python unittest suite in grill-loop/scripts/test_grill_state.py.
+```
+
+For agents that do not support skills natively, ask them to clone the repository and use `grill-loop/SKILL.md` as the workflow instruction file.
+
+## Use
 
 ### Supervised
 
@@ -58,17 +145,6 @@ You may choose conservative reversible branches, but keep unresolved business de
 
 Autonomous mode must not invent missing facts. If the loop cannot safely continue, it should stop with unresolved items rather than pretend certainty.
 
-## Installation
-
-Copy the skill folder into your Codex skills directory:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R grill-loop ~/.codex/skills/grill-loop
-```
-
-Then restart Codex or start a new session so the skill is discovered.
-
 ## Repository layout
 
 ```text
@@ -86,9 +162,9 @@ grill-loop/
 
 grill-loop-visual/
   index.html
-```
 
-`grill-loop-visual/index.html` is an optional explainer page. It is not required for the skill to run.
+install.sh
+```
 
 ## Validation
 

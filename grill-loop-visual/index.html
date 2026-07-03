@@ -263,6 +263,11 @@
     .prompt b { display: block; margin-bottom: 12px; color: white; font: 800 15px var(--sans); }
     .prompt .tag { color: #ffb078; }
     .copy-btn { position: absolute; top: 16px; right: 16px; padding: 6px 10px; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; color: #9da6b2; background: rgba(255,255,255,.04); cursor: pointer; font: 11px var(--sans); }
+    .install-callout { margin-top: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.62); box-shadow: var(--shadow); }
+    .install-callout h3 { margin: 0 0 8px; font-size: 24px; letter-spacing: -.04em; }
+    .install-callout p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+    .install-code { overflow-x: auto; padding: 16px 18px; color: #d7dce3; background: #12151b; border-radius: 14px; font: 12px/1.7 var(--mono); }
+    .install-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 
     footer { padding: 50px 0 70px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
@@ -310,6 +315,7 @@
         <a href="#modes">两种模式</a>
         <a href="#outcome">效果与边界</a>
         <a href="#usage">怎么用</a>
+        <a href="https://github.com/jcanha11/grill-loop-skill">GitHub</a>
       </div>
     </div>
   </nav>
@@ -324,6 +330,7 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="#origin">为什么有 Grill Me 还要升级？↓</a>
             <a class="btn btn-ghost" href="#mechanism">观看一轮如何运转</a>
+            <a class="btn btn-ghost" href="#usage">安装与使用</a>
           </div>
         </div>
         <div class="forge" aria-label="Grill Loop 多角色架构示意图">
@@ -576,8 +583,18 @@
     <section class="section" id="usage">
       <div class="wrap">
         <div class="section-kicker">08 · Use it</div>
-        <h2>给它方案、模式和权限，<br>然后让循环开始。</h2>
-        <p class="lead">产品、策略、实验方案可直接使用内置量表。其他领域应先提供适配量表，或使用监督模式。</p>
+        <h2>先装上，再给它方案、模式和权限。</h2>
+        <p class="lead">这页本身就是公开落地页：先解释机制，再把人带到安装和调用。产品、策略、实验方案可直接使用内置量表；其他领域应先提供适配量表，或使用监督模式。</p>
+        <div class="install-callout">
+          <h3>一键安装</h3>
+          <p>默认安装到 <span class="mono">$HOME/.agents/skills/grill-loop</span>。如果你的环境使用旧目录，可在 README 中查看 <span class="mono">GRILL_LOOP_SKILLS_DIR</span> 覆盖方式。</p>
+          <div class="install-code">curl -fsSL https://raw.githubusercontent.com/jcanha11/grill-loop-skill/main/install.sh | bash</div>
+          <div class="install-links">
+            <a class="btn btn-primary" href="https://github.com/jcanha11/grill-loop-skill">打开 GitHub 仓库</a>
+            <a class="btn btn-ghost" href="https://github.com/jcanha11/grill-loop-skill/blob/main/README.zh-CN.md">中文 README</a>
+            <a class="btn btn-ghost" href="https://github.com/jcanha11/grill-loop-skill/blob/main/README.md">English README</a>
+          </div>
+        </div>
         <div class="use-box">
           <div class="prompt"><button class="copy-btn">复制</button><b>监督模式 · 关键处问我</b><span class="copy-text">用 <span class="tag">$grill-loop</span> supervised 模式审问并迭代这个方案：
 
@@ -586,6 +603,15 @@
 我授权你使用 subagents 作为 Grill / Research / Judge。
 缺失业务事实时采用保守分支，不要编造。
 方案文件：/path/to/plan.md</span></div>
+          <div class="prompt"><button class="copy-btn">复制</button><b>让 Codex 安装</b><span class="copy-text">Use $skill-installer to install the skill folder from
+https://github.com/jcanha11/grill-loop-skill/tree/main/grill-loop
+into my user skills directory. Then verify it by running:
+python3 -m unittest grill-loop/scripts/test_grill_state.py</span></div>
+          <div class="prompt"><button class="copy-btn">复制</button><b>让其他 Agent 安装</b><span class="copy-text">Install the Agent Skill at:
+https://github.com/jcanha11/grill-loop-skill/tree/main/grill-loop
+
+Preserve SKILL.md, references/, scripts/, tests/, and agents/openai.yaml.
+Install it as a user-level skill named grill-loop and run the Python unittest suite.</span></div>
         </div>
       </div>
     </section>
