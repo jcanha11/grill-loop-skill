@@ -1,0 +1,30 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Grill Loop run artifacts
+.grill-loop/
+state.json
+decisions.md
+drafts/
+final.md
+
+# Local secrets and environment files
+.env
+.env.*
+*.local
+*.log
+*.tmp
+
+# Editor and workspace noise
+.idea/
+.vscode/
+
+# Local test vaults or manual browser/computer-use scratch files
+obsidian-cua-test-vault/
+computer-use-and-browser-control-test.md
+browser-control-test.html
+browser-upload-test.txt

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grill Loop"
+  short_description: "Run supervised or autonomous plan grilling loops"
+  default_prompt: "Use $grill-loop with specialized subagents in supervised mode to stress-test and improve this product, strategy, or experiment plan."
